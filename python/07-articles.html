@@ -1,0 +1,16 @@
+{% autoescape None %}
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <table>
+	<tr>
+	<th>article</th>
+	</tr>
+	{% for a in articles %}
+	<tr><td>{{ escape(a) }}</td></tr>
+	{% end %}
+    </table>
+  </body>
+</html>
